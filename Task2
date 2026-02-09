@@ -1,4 +1,4 @@
-[07:24, 09/02/2026] AbhiShant 2: def add(x, y):
+def add(x, y):
     return x + y
 
 def subtract(x, y):
@@ -37,24 +37,3 @@ while True:
         break
     else:
         print("Invalid input. Please enter a valid operation choice.")
-[07:24, 09/02/2026] AbhiShant 2: import random
-import string
-
-def generate_password(length):
-    characters = string.ascii_letters + string.digits + string.punctuation
-    password = ''.join(random.choice(characters) for _ in range(length))
-    return password
-
-def main():
-    try:
-        length = int(input("Enter the desired length of the password: "))
-        if length <= 0:
-            print("Please enter a positive length.")
-            return
-        password = generate_password(length)
-        print("Generated Password:", password)
-    except ValueError:
-        print("Please enter a valid number.")
-
-if _name_ == "_main_":
-    main()
